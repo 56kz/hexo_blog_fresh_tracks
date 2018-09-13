@@ -1,0 +1,46 @@
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	 <div class="navbar-header">
+		 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		 <span class="icon-bar"></span>
+		 <span class="icon-bar"></span>
+		 <span class="icon-bar"></span>
+		 </button>
+		 <a class="navbar-brand" href="#"> # F r e s h t r a c k s</a>
+	 </div> <!-- cierra el navbar header -->
+
+	 <div class="collapse navbar-collapse" id="myNavbar">
+ 	   <ul class="nav navbar-nav navbar-right">
+		   <li><a href="#"><i class="glyphicon glyphicon-flash"></i></a></li>
+     </ul>
+ 	 </div>
+ </div>
+</nav>
+
+
+<div class="row text-center">
+	<div class="panel panel-default">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading"><h1><%= config.author %></h1></div>
+	  <div class="panel-body"><p><%= config.subtitle %></p></div>
+
+		<div class='row'>
+ 	  	<ul>
+ 	    	<% page.posts.each(function(post){ %>
+ 	     	<li>
+ 	     		<h3><a href="<%- url_for(post.path) %>"><%= post.title %></a></h3>
+ 	             <div class='text-muted'><%= date(post.date, config.date_format) %></div>
+
+ 	             <% if(post.excerpt) { %>
+ 	                 <p>
+ 	                     <%- post.excerpt %>
+ 	                 </p>
+ 	             <% } %>
+ 	     	</li>
+ 	   	<% }) %>
+ 	 	</ul>
+ 	 </div>
+
+
+	</div>
+</div>
