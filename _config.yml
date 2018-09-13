@@ -5,16 +5,16 @@
 # Site
 title: fresh_tracks
 subtitle:
-description:
+description: blog temas nuevos
 keywords:
 author: 56kz
 language:
-timezone:
+timezone: Japan
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: https://github.com/56kz/fresh_tracks
+root: /fresh_tracks/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
