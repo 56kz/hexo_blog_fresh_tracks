@@ -78,4 +78,6 @@ theme: customTheme
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:56kz/fresh_tracks.git
+  branch: gh-pages 
